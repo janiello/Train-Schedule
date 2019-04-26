@@ -1,3 +1,6 @@
+.jumbotron {
+    background-color: gold;
+}
 .display-4 {
     text-align: center;
 }
@@ -8,4 +11,9 @@
 
 #punny {
     text-align: center;
+}
+
+.card-header {
+    color: white;
+    background-color: royalblue;
 }

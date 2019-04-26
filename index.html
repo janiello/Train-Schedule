@@ -12,10 +12,36 @@
     <body>
         <div class="container">
             <div class="jumbotron">
-                <h1 class="display-4">Train Shedules</h1>
+                <h1 class="display-4">Train Schedules</h1>
                 <p class="lead">All aboard the Firebase Express!</p>
                 <hr class="my-4">
                 <p id="punny">Try not to de-rail your trip by missing the next train because you were side-tracked.</p>
+            </div>
+            <div class="card border-primary mb-3">
+                <div class="card-header">Add Train</div>
+                    <div class="card-body text-primary">
+                      <form id="add-train">
+                          <div class="form-group">
+                              <label for="train-name">Train Name:</label>
+                              <input type="text" class="form-control" id="train-name" placeholder="Thomas">
+                          </div>
+                          <div class="form-group">
+                              <label for="destination">Destination:</label>
+                              <input type="text" class="form-control" id="destination" placeholder="Raleigh">
+                          </div>
+                          <div class="form-group">
+                              <label for="first-train">First Train Time (hh:mm - military time):</label>
+                              <input type="text" class="form-control" id="first-train" placeholder="22:07">
+                          </div>
+                          <div class="form-group">
+                              <label for="frequency">Frequency (min):</label>
+                              <input type="text" class="form-control" id="frequency" placeholder="15">
+                          </div>
+                          <div class="form-group">
+                              <input type="submit" class="btn btn-primary" id="submit">
+                          </div>
+                      </form>
+                    </div>
             </div>
         </div>
         <script href="trains.js"></script>
