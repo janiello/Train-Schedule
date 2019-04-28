@@ -60,7 +60,9 @@ database.ref().on("child_added", function(childSnapshot) {
     // Append the above information to the table in the html by programmaticly creating row elements
     $("#all-train-schedules").append("<tr class='new-train'><td class='train-name'> " + childSnapshot.val().name + 
     " </td><td class='train-destination'> " + childSnapshot.val().destination +  
-    " </td><td class='train-frequency' " + childSnapshot.val().frequency + 
+    " </td><td class='train-frequency'> " + childSnapshot.val().frequency + 
+    " </td><td class='train-next'> " + moment(nextTrain).format("HH:mm") + 
+    " </td><td class='train-wait'> " + waitLength + 
     " </td></tr>");
 }, function (errorObject) {
     console.log("Errors handled: " + errorObject.code);
